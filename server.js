@@ -26,7 +26,6 @@ app.get("/notes", (req, res) =>
   res.sendFile(path.join(__dirname, "/public/notes.html"))
 );
 
-//line 32
 // This view route is a GET route for the db page
 app.get("/api/notes", function (req, res) {
   fs.readFile("db/db.json", "utf8", (err, data) => {
@@ -36,7 +35,6 @@ app.get("/api/notes", function (req, res) {
   });
 });
 
-//line 41
 // Reads the newly added notes from the request body and then adds them to the db.json file
 const readThenAppendToJson = (content, file) => {
   fs.readFile(file, "utf8", (err, data) => {
@@ -50,14 +48,12 @@ const readThenAppendToJson = (content, file) => {
   });
 };
 
-//line 54
 // Writes data to db.json -> utilized within the readThenAppendToJson function
 const writeNewNoteToJson = (destination, content) =>
   fs.writeFile(destination, JSON.stringify(content, null, 4), (err) =>
     err ? console.error(err) : console.info(`\nData written to ${destination}`)
   );
 
-//line 60
 // Post route -> receives a new note, saves it to request body, adds it to the db.json file, and then returns the new note to the client
 app.post("/api/notes", (req, res) => {
   const { title, text } = req.body;
@@ -81,7 +77,6 @@ app.post("/api/notes", (req, res) => {
   }
 });
 
-//line 83
 // Delete route -> reads the db.json file, uses the json objects uniqids to match the object to be deleted, removes that object from the db.json file, then re-writes the db.json file
 app.delete("/api/notes/:id", (req, res) => {
   let id = req.params.id;
