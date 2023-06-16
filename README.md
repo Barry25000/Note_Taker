@@ -50,6 +50,7 @@ Please direct any questions to.<br>
 Barry Engler,  at barryengler@gmail.com <br>
 [GitHub](https://github.com/Barry25000)
 
+[Deployed link](https://floating-dusk-97726-f9d1006ac4b6.herokuapp.com/notes)
 
 <b>Live Deployed Screenshot</b><br>
 ![Live Screenshot](https://github.com/Barry25000/Note_Taker/blob/main/public/assets/images/live_screenshot.png)
