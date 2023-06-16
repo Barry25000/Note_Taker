@@ -5,7 +5,7 @@ const fs = require("fs");
 const uniqid = require("uniqid");
 
 //assigning port to listen to.
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 //creates new app with express
 const app = express();
@@ -16,9 +16,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // GET route for the homepage
-app.get(
-  "/",
-  (req, res) => res.sendFile(path.join(__dirname, "/public/index.html")) //good from here up
+app.get("/", (req, res) =>
+  res.sendFile(path.join(__dirname, "/public/index.html"))
 );
 
 // GET route for the notes page
