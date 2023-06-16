@@ -4,7 +4,7 @@
 
 ## Description
 
-Create an application that you can write, store and retrieve and delete notes online.
+Create an application that you can write, store, retrieve and delete notes online.
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ Create an application that you can write, store and retrieve and delete notes on
 ## Installation
 
 To install necessary dependencies, run the following command: <br>
-npm i, to load required packages
+npm i, to load required packages if running locally.
 
 ## Usage
 
@@ -40,7 +40,7 @@ https://opensource.org/license/MIT/
 
 ## Contributing
 
-Barry Engler, I also recieved help from my tutor's David Johnson and Nathan Engler.
+Barry Engler, I also recieved help from my tutor's David Johnson and Nathan Engler as well as my TA Dom on this project.
 
 ## Tests
 
@@ -50,7 +50,7 @@ There are no tests currently with this application.
 ## Questions
 
 Please direct any questions to.<br>
-Barry Engler, I also recieved help from my tutor's David Johnson and Nathan Engler. at barryengler@gmail.com <br>
+Barry Engler,  at barryengler@gmail.com <br>
 [GitHub](https://github.com/Barry25000)
 
 
