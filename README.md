@@ -52,3 +52,7 @@ There are no tests currently with this application.
 Please direct any questions to.<br>
 Barry Engler, I also recieved help from my tutor's David Johnson and Nathan Engler. at barryengler@gmail.com <br>
 [GitHub](https://github.com/Barry25000)
+
+
+Live Deployed Screenshot
+![Live Screenshot}(https://github.com/Barry25000/Note_Taker/blob/main/public/assets/images/live_screenshot.png)
