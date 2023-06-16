@@ -29,6 +29,9 @@ npm i, to load required packages
 
 To keep and track notes.
 
+<b>Deployed Screenshot<b> /n
+![Live Screenshot}(https://github.com/Barry25000/Note_Taker/blob/main/public/assets/images/live_screenshot.png)
+
 ## License
 
 This project is licensed under. <br>
