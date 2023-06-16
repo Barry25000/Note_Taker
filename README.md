@@ -54,5 +54,5 @@ Barry Engler, I also recieved help from my tutor's David Johnson and Nathan Engl
 [GitHub](https://github.com/Barry25000)
 
 
-<b>Live Deployed Screenshot<b> /n
+<b>Live Deployed Screenshot<b> </n>
 ![Live Screenshot}(https://github.com/Barry25000/Note_Taker/blob/main/public/assets/images/live_screenshot.png)
