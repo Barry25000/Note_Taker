@@ -1,40 +1,31 @@
-//required packages
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const uniqid = require("uniqid");
 
-//assigning port to listen to.
 const PORT = process.env.PORT || 3001;
-
-//creates new app with express
 const app = express();
 
-//middleware
+//middleware, connects server to client
 app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// GET route for the homepage
+// GET routes
 app.get("/", (req, res) =>
   res.sendFile(path.join(__dirname, "/public/index.html"))
 );
-
-// GET route for the notes page
 app.get("/notes", (req, res) =>
   res.sendFile(path.join(__dirname, "/public/notes.html"))
 );
-
-// GET route for the db page
 app.get("/api/notes", function (req, res) {
   fs.readFile("db/db.json", "utf8", (err, data) => {
     var jsonData = JSON.parse(data);
-    console.log(jsonData);
     res.json(jsonData);
   });
 });
 
-// Reads new note and parses data
+// Reads new note, parses data and writes note
 const newArray = (content, file) => {
   fs.readFile(file, "utf8", (err, data) => {
     if (err) {
@@ -46,8 +37,6 @@ const newArray = (content, file) => {
     }
   });
 };
-
-// Writes note data to db
 const newArrayWrite = (arrayData, content) =>
   fs.writeFile(arrayData, JSON.stringify(content, null, 2), (err) =>
     err ? console.error(err) : console.info(`\nNote written to ${arrayData}`)
@@ -62,14 +51,11 @@ app.post("/api/notes", (req, res) => {
       text: text,
       id: uniqid(),
     };
-
     newArray(newNote, "db/db.json");
-
     const response = {
       status: "Success, added new note.",
       body: newNote,
     };
-
     res.json(response);
   } else {
     res.json("Error posting new note.");
