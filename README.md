@@ -56,3 +56,6 @@ Barry Engler, I also recieved help from my tutor's David Johnson and Nathan Engl
 
 <b>Live Deployed Screenshot</b><br>
 ![Live Screenshot](https://github.com/Barry25000/Note_Taker/blob/main/public/assets/images/live_screenshot.png)
+
+<b>Repo Screenshot<b><br>
+![Repo Screenshot](https://github.com/Barry25000/Note_Taker/blob/main/public/assets/images/repo_screenshot.png)
